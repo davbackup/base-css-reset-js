@@ -1,0 +1,204 @@
+/* Variables de couleurs */
+:root {
+  --color-primary: #000; /* Couleur primaire */
+  --color-secondary: #fff; /* Couleur secondaire */
+  --color-accent: #ff0000; /* Couleur d'accent */
+  --color-background: #f9f9f9; /* Couleur de fond */
+  --color-text: #333; /* Couleur du texte */
+}
+
+/* Variables de polices */
+:root {
+  --poppins: "poppins", Arial, sans-serif; /* Police Poppins */
+  --font-family-body: "lato", sans-serif; /* Police du corps du texte */
+  --font-family-primary: "Open Sans", Arial, sans-serif; /* Police primaire */
+  --font-family-secondary: "Roboto", Arial, sans-serif; /* Police secondaire */
+  --font-family-accent: "Montserrat", Arial, sans-serif; /* Police d'accent */
+}
+
+/* Variables de transitions */
+:root {
+  --transition-duration: 350ms; /* Durée de transition */
+  --transition-timing: ease-in-out; /* Courbe de transition */
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Taille de police de base */
+  font-family: var(--font-family-body); /* Police du corps du texte */
+  scroll-behavior: smooth; /* Défilement fluide */
+}
+
+body {
+  background-color: var(--color-background); /* Couleur de fond du corps */
+  color: var(--color-text); /* Couleur du texte */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal; /* Poids de police normal pour les titres */
+}
+
+a {
+  color: var(--color-primary); /* Couleur des liens */
+  text-decoration: none; /* Pas de soulignement pour les liens */
+}
+
+button {
+  border: none; /* Pas de bordure pour les boutons */
+  background-color: transparent; /* Fond transparent pour les boutons */
+  cursor: pointer; /* Curseur de type pointer pour les boutons */
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit; /* Police héritée pour les éléments de formulaire */
+}
+
+ul,
+ol {
+  list-style: none; /* Pas de style de liste par défaut */
+}
+
+img {
+  max-width: 100%; /* Largeur maximale de 100% pour les images */
+  height: auto; /* Hauteur automatique pour les images */
+}
+
+table {
+  border-collapse: collapse; /* Fusion des bordures de tableau */
+  width: 100%; /* Largeur de tableau de 100% */
+}
+
+/* Formulaires */
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px solid #ccc; /* Bordure pour les champs de formulaire texte */
+  border-radius: 4px; /* Bordure arrondie pour les champs de formulaire */
+  padding: 8px; /* Espacement interne pour les champs de formulaire */
+}
+
+button,
+input[type="submit"] {
+  background-color: var(--color-primary); /* Couleur de fond pour les boutons */
+  color: var(--color-secondary); /* Couleur du texte pour les boutons */
+  padding: 10px 20px; /* Espacement interne pour les boutons */
+  font-size: 14px; /* Taille de police pour les boutons */
+  border-radius: 4px; /* Bordure arrondie pour les boutons */
+}
+
+/* Liens visités */
+a:visited {
+  color: var(--color-primary); /* Couleur des liens visités */
+}
+
+/* Images */
+figure {
+  margin: 0; /* Marge de 0 pour les figures */
+  display: block; /* Affichage en bloc pour les figures */
+}
+
+figcaption {
+  font-style: italic; /* Style en italique pour les légendes */
+  font-size: 12px; /* Taille de police pour les légendes */
+  display: block; /* Affichage en bloc pour les légendes */
+}
+
+/* Tableaux */
+table {
+  border: 1px solid #ccc; /* Bordure pour les tableaux */
+}
+
+th {
+  font-weight: bold; /* Poids de police en gras pour les en-têtes de tableau */
+}
+
+/* Médias embarqués */
+video,
+audio,
+object {
+  max-width: 100%; /* Largeur maximale de 100% pour les médias embarqués */
+}
+
+/* Éléments interactifs */
+button,
+select,
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer; /* Curseur de type pointer pour les éléments interactifs */
+}
+
+/* Éléments de structure */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; /* Affichage en bloc pour les éléments de structure */
+}
+
+/* Transitions pour les éléments spécifiés */
+#boxPageOverlay,
+#boxPage,
+form label input,
+form label textarea,
+form label select,
+form .label input,
+form .label select,
+form input.submit {
+  transition: all var(--transition-duration) var(--transition-timing); /* Transition pour les éléments spécifiés */
+}
+
+/* Styles responsifs pour la typographie */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px; /* Taille de police réduite pour les petits écrans */
+  }
+
+  h1 {
+    font-size: 24px; /* Taille de police réduite pour les titres */
+  }
+
+  h2 {
+    font-size: 20px; /* Taille de police réduite pour les titres */
+  }
+
+  h3 {
+    font-size: 18px; /* Taille de police réduite pour les titres */
+  }
+
+  p {
+    font-size: 14px; /* Taille de police réduite pour les paragraphes */
+  }
+
+  /* Ajoutez les autres styles responsifs pour les éléments selon vos besoins */
+}
+
+@media screen and (max-width: 1200px) {
+  /* Styles responsifs pour les écrans plus grands */
+}
+
+/* Ajoutez d'autres Media Queries pour gérer différentes tailles d'écran */
+
+/* Vos styles spécifiques ici */
